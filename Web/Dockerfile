@@ -10,7 +10,7 @@ COPY package*.json ./
 
 ###  Installing dependencies
 
-RUN npm install --silent
+RUN npm install --legacy-peer-deps --silent
 
 # copy local files to app folder
 COPY . .
