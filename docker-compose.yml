@@ -13,7 +13,6 @@ services:
     environment:
       - MONGODB_URI=mongodb+srv://ameerhamza963:Eo0mIqr2IvOkn7Yl@cluster0.ylla0w5.mongodb.net/
       - NODE_ENV=development
-      - API_URL=http://ec2-54-82-10-46.compute-1.amazonaws.com:4000
 
   client:
     build:
@@ -21,6 +20,8 @@ services:
       dockerfile: Dockerfile
     image: myapp-client
     container_name: myapp-react-client
+    environment:
+      - API_URL=http://ec2-54-82-10-46.compute-1.amazonaws.com:4000
     depends_on:
       - server
 
