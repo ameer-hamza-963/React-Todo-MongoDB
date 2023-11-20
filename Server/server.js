@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
 
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use(require("../routes/todoRoute.js"));
-const mongo = require("../db");
+app.use(require("./routes/todoRoute.js"));
+const mongo = require("./db");
 
 const connectToMongoDB = async () => {
   await mongo().then(() => {
