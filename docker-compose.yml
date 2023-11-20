@@ -29,8 +29,6 @@ services:
       - /usr/app/node_modules
     depends_on:
       - server
-    networks:
-      - app-network
 
 volumes:
   data-volume:
