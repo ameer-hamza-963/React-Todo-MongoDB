@@ -26,7 +26,6 @@ services:
       - '3000:3000'    
     environment:
       - API_URL=http://ec2-54-226-103-25.compute-1.amazonaws.com:4000
-      - HOST=http://ec2-54-226-103-25.compute-1.amazonaws.com:4000
     depends_on:
       - server
 
