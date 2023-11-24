@@ -18,3 +18,5 @@ COPY . .
 CMD ["npm","run","build"]
 
 RUN npm install -g serve
+
+RUN npm run start

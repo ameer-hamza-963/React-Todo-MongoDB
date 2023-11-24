@@ -21,7 +21,6 @@ services:
       dockerfile: Dockerfile
     image: myapp-client
     container_name: myapp-react-client
-    command: serve -s build
     ports:
       - '3000:3000'    
     environment:
