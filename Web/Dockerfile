@@ -16,3 +16,7 @@ RUN npm install --legacy-peer-deps --silent
 COPY . .
 
 CMD ["npm","run","build"]
+
+RUN npm install -g serve
+
+RUN serve -s build
