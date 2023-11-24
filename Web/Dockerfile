@@ -19,4 +19,4 @@ CMD ["npm","run","build"]
 
 RUN npm install -g serve
 
-RUN npm run start
+CMD ["npm","start"]
